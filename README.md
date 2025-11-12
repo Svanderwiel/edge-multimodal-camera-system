@@ -2,7 +2,7 @@
 
 A real-time intelligent camera system that combines on-device object detection (YOLO) with cloud-based vision-language models (Gemini) to understand and describe the world conversationally.
 
-## 🎯 Project Overview
+## Project Overview
 
 This system demonstrates cutting-edge multimodal AI, edge-cloud hybrid architecture, and hardware-software integration. It detects objects locally at 30+ fps using YOLO, then selectively queries Gemini API only when interesting objects appear, displaying natural language descriptions.
 
@@ -16,32 +16,32 @@ This system demonstrates cutting-edge multimodal AI, edge-cloud hybrid architect
 - **Fine-Detail Recognition**: Can distinguish ripeness, brands, conditions, and more
 - **Modular Architecture**: Professional Python package structure following best practices
 
-## 📊 Current Status
+## Current Status
 
-### ✅ Phase 1: Foundation - COMPLETED
+### Phase 1: Foundation - COMPLETED
 - YOLO object detection at 30+ fps
 - Camera pipeline with live video feed
 - Performance testing scripts
 
-### ✅ Phase 2: Vision API Integration - COMPLETED
+### Phase 2: Vision API Integration - COMPLETED
 - Gemini API client with image optimization
 - 10 specialized prompt templates
 - Rate limiting and cost control
 - 75% image size reduction
 
-### ✅ Phase 3: Smart Triggering & Cost Control - COMPLETED
+### Phase 3: Smart Triggering & Cost Control - COMPLETED
 - CLIP+YOLO object-specific embeddings
 - SQLite response caching
 - Smart triggering with cooldown logic
 - Confidence threshold filtering (>0.7)
 - Real Gemini API integration working
 
-### 🚧 Phase 4: Response Display - IN PROGRESS
+### Phase 4: Response Display - IN PROGRESS
 - Text overlay system
 - Visual polish and animations
 - Multiple simultaneous responses
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 edge-multimodal-camera-system/
@@ -91,7 +91,7 @@ edge-multimodal-camera-system/
 └── README.md                       # This file
 ```
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 
@@ -141,7 +141,7 @@ Your `.env` file should look like:
 GOOGLE_API_KEY=your_actual_api_key_here
 ```
 
-## 🎮 Usage
+## Usage
 
 ### Run Main Demo
 
@@ -184,18 +184,18 @@ pip install -e .
 from multimodal_camera import DetectionManager, VisionAPIClient
 ```
 
-## 📈 Performance Metrics
+## Performance Metrics
 
 | Component | Performance | Status |
 |-----------|-------------|--------|
-| YOLO Detection | 30+ fps | ✅ Working |
-| CLIP Embedding | ~50ms/object | ✅ Working |
-| Cache Lookup | <1ms | ✅ Working |
-| API Response | <3s | ✅ Working |
-| Image Optimization | 75% reduction | ✅ Working |
-| Cost per Day | $0 (free tier) | ✅ Working |
+| YOLO Detection | 30+ fps | Working |
+| CLIP Embedding | ~50ms/object | Working |
+| Cache Lookup | <1ms | Working |
+| API Response | <3s | Working |
+| Image Optimization | 75% reduction | Working |
+| Cost per Day | $0 (free tier) | Working |
 
-## 🎯 Capabilities
+## Capabilities
 
 ### What You Can Ask
 
@@ -218,7 +218,7 @@ from multimodal_camera import DetectionManager, VisionAPIClient
 9. **safety_check** - Safety assessment
 10. **accessibility** - Accessibility analysis
 
-## ⚙️ Configuration
+## Configuration
 
 Edit `.env` file to customize:
 
@@ -240,7 +240,7 @@ COOLDOWN_SECONDS=10
 CACHE_TTL_HOURS=24
 ```
 
-## 💰 Cost Control
+## Cost Control
 
 ### Smart Triggering
 - **Cooldown Logic**: 10-second cooldown per object class
@@ -252,7 +252,7 @@ CACHE_TTL_HOURS=24
 - **Smart Caching**: Same object detected 10 times = 1 API call
 - **99.7% Reduction**: vs naive streaming approach (1,800 calls/min → 5-10 calls/min)
 
-## 🧪 Development
+## Development
 
 ### Code Formatting
 
@@ -271,7 +271,7 @@ flake8 src/ scripts/ tests/
 3. Update documentation
 4. Run tests: `pytest`
 
-## 📚 Documentation
+## Documentation
 
 See `docs/PRD/` directory for detailed documentation:
 - **edge_ai_camera_prd.md**: Complete project requirements
@@ -279,7 +279,7 @@ See `docs/PRD/` directory for detailed documentation:
 - **IMPLEMENTATION_NOTES.md**: Implementation guidelines
 - **PROGRESS_TRACKING.md**: Current progress status
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### No API Response
 - Check API key in `.env` file
@@ -301,22 +301,22 @@ See `docs/PRD/` directory for detailed documentation:
 - Check Python path includes `src/`
 - Activate virtual environment
 
-## 🤝 Contributing
+## Contributing
 
 This is a personal project for demonstrating multimodal AI capabilities. Feel free to fork and adapt for your own use cases.
 
-## 📄 License
+## License
 
 This project is for educational and demonstration purposes.
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Ultralytics** for YOLO
 - **OpenAI** for CLIP
 - **Google** for Gemini API
 - **NVIDIA** for Jetson platform
 
-## 📧 Contact
+## Contact
 
 For questions or feedback about this project, please refer to the documentation in the `docs/PRD/` directory.
 
