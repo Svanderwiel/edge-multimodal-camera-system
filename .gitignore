@@ -54,9 +54,22 @@ temp/
 # Cache database
 vision_cache.db
 *.db
+data/cache/*.db
 
 # Backup files
 *_backup.py
 
 # Temporary test files
 tmp_cusparselt/
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Old/deprecated files
+old_*
+deprecated_*
+
+# Jupyter notebooks (if any)
+*.ipynb_checkpoints/
